@@ -1,0 +1,150 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+/* header,
+footer,
+section {
+  justify-content: center;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#masthead {
+  margin: 0;
+  padding-bottom: 3.5rem;
+  background: url(assets/homepage-masthead-test-desktop-320.jpg) no-repeat
+    center center fixed;
+  width: 100vw;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+#ribbon {
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+  /* padding: 1rem; */
+  z-index: 1;
+  width: 100vw;
+  display: grid;
+  columns: gap 1rem;
+  /* row-gap: inherit; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+#selectPlan {
+  /* border: 1px solid red; */
+}
+
+#adBlurb {
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  width: 40vw;
+  /* max-width: 768px; */
+}
+
+.superhead {
+  margin: 10rem auto 0.5rem auto;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0 0 0;
+  min-height: auto;
+  width: 42%;
+  max-width: 300px;
+}
+
+.subhead {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 670px;
+}
+
+.secondary-message {
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.btn-free-trial {
+  display: inherit;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.masthead-legal {
+  display: block;
+  margin: 1.25rem auto;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.green {
+  color: rgb(37, 189, 157);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.tiny-reg {
+  font-size: 0.75rem;
+}
+
+.login {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.login:hover {
+  color: #b9b9b9;
+}
+
+.ribbon-brand-img {
+  max-width: 355px;
+}
+
+.ribbon-info {
+  text-align: left;
+}
+
+/* @media screen and (min-width: 1021) {
+  #masthead {
+    background-image: url(assets/homepage-masthead-test-desktop-320.jpg);
+  }
+} */
