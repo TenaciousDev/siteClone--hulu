@@ -3,12 +3,6 @@ body {
   margin: 0;
 }
 
-/* header,
-footer,
-section {
-  justify-content: center;
-} */
-
 a {
   text-decoration: none;
   color: inherit;
@@ -19,11 +13,9 @@ a {
   padding-bottom: 3.5rem;
   background: url(assets/homepage-masthead-test-desktop-320.jpg) no-repeat
     center center fixed;
-  /* width: 100vw; */
   background-position: center top;
   background-size: cover;
   overflow: hidden;
-  /* position: relative; */
 }
 
 #ribbon {
@@ -34,7 +26,6 @@ a {
     #08141f 100%
   );
   z-index: 1;
-  /* width: 100vw; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -44,7 +35,6 @@ a {
 
 #library {
   background-color: black;
-  /* width: 100vw; */
 }
 
 #adBlurb {
@@ -56,7 +46,6 @@ a {
   text-align: center;
   padding: 1rem;
   width: 40vw;
-  /* max-width: 768px; */
 }
 
 .superhead {
@@ -211,7 +200,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 786px;
+  /* max-width: 786px; */
   margin: 0 auto;
 }
 
@@ -221,18 +210,25 @@ a {
   padding-top: 6rem;
 }
 
+.library-eyebrow {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
 .library-title {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.5;
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .library-description {
-  max-width: 680px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
   padding-top: 1rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .library-grid-container {
@@ -240,7 +236,7 @@ a {
   margin: 0 auto;
   padding: 0 1.3rem 3rem;
   position: relative;
-  max-width: 768px;
+  max-width: 80%;
   z-index: 2;
 }
 
@@ -248,7 +244,7 @@ a {
   display: grid;
   column-gap: 20px;
   row-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
 
@@ -307,9 +303,39 @@ a {
   }
 } */
 
-/* @media (min-width: 1280px) {
+@media (max-width: 1024px) {
   .library-grid-container {
-    max-width: 100%;
+    max-width: 680px;
     padding: 0 0 100px;
   }
-} */
+
+  .library-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  #ribbon {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .ribbon-row {
+    grid-template-columns: 1fr;
+    margin: auto;
+    align-content: center;
+  }
+  .ribbon-info {
+    text-align: center;
+  }
+
+  .ribbon-btn-container {
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+
+  .logo {
+    width: 500px;
+  }
+}
