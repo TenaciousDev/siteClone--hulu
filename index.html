@@ -15,7 +15,9 @@
   <!-- Begin Body -->
   <body>
     <header id="masthead">
-      <button class="login white"><a href="#"> LOG IN</a></button>
+      <button class="login white">
+        <a href="#" target="_blank"> LOG IN</a>
+      </button>
       <div class="wrapper">
         <p class="superhead green">TRY UP TO ONE MONTH FREE</p>
         <div>
@@ -40,35 +42,106 @@
     </header>
 
     <section id="ribbon">
-      <div class="white">
+      <div class="ribbon-row white">
         <img
           src="assets/dplus-logo-0-1-2.png"
           alt="hulu, Disney+, ESPN+"
           class="ribbon-brand-img"
         />
       </div>
-      <div class="ribbon-info white">
+      <div class="ribbon-info">
         <div class="ribbon-eyebrow green">BUNDLE AND SAVE OVER 25%</div>
-        <div class="ribbon-details-container">
+        <div class="ribbon-details-container white">
           <div class="ribbon-get-deal">
             Get Hulu, Disney+, and ESPN+ for $12.99/month.
           </div>
           <div class="ribbon-more-details">
-            <a href="#" class="view-ribbon-more-details">More Details</a>
+            <a href="#" class="view-ribbon-more-details" target="_blank"
+              >More Details</a
+            >
           </div>
         </div>
       </div>
-      <div class="btn-ribbon">
-        <div class="ribbon-btn-container">
-          <div class="ribbon-btn-item"></div>
-          <div class="ribbon-btn-terms"></div>
+      <div class="ribbon-btn-container">
+        <div class="ribbon-btn-item">
+          <button class="btn-get-bundle white">GET BUNDLE</button>
+        </div>
+        <div class="ribbon-btn-terms">
+          <a href="#" class="btn-terms white" target="_blank">Terms Apply</a>
         </div>
       </div>
     </section>
 
-    <section id="selectPlan"></section>
+    <section id="library">
+      <div class="library-header">
+        <div class="library-content">
+          <div class="library-eyebrow green">INCLUDED IN ALL PLANS</div>
+          <div class="library-title white">All The TV You Love</div>
+          <div class="library-description white">
+            Stream full seasons of exclusive series, current-season episodes,
+            hit movies, Hulu Originals, kids shows, and more.
+          </div>
+        </div>
+      </div>
+      <div class="library-grid-container">
+        <div class="library-grid white">
+          <div class="library-grid-item">
+            <div class="library-item-gradient"></div>
+            <img
+              src="assets/bobs-burgers.jpg"
+              alt=""
+              class="library-item-background"
+            />
+            <div class="library-item-overlay">
+              <div class="library-item-eyebrow">Past & Current Seasons</div>
+              <div class="library-item-category">TV Shows</div>
+            </div>
+          </div>
+          <div class="library-grid-item">
+            <div class="library-item-gradient"></div>
+            <img
+              src="assets/palm-springs.jpg"
+              alt=""
+              class="library-item-background"
+            />
+            <div class="library-item-overlay">
+              <div class="library-item-eyebrow">New & Classic</div>
+              <div class="library-item-category">Movies</div>
+            </div>
+          </div>
+          <div class="library-grid-item">
+            <div class="library-item-gradient"></div>
+            <img
+              src="assets/little-fires-everywhere.jpg"
+              alt=""
+              class="library-item-background"
+            />
+            <div class="library-item-overlay">
+              <div class="library-item-eyebrow">Groundbreaking</div>
+              <div class="library-item-category">Hulu Originals</div>
+            </div>
+          </div>
+          <div class="library-grid-item">
+            <div class="library-item-gradient"></div>
+            <img
+              src="assets/watchmen.jpg"
+              alt=""
+              class="library-item-background"
+            />
+            <div class="library-item-overlay">
+              <div class="library-item-eyebrow">Add-on</div>
+              <div class="library-item-category">Premiums</div>
+            </div>
+            <div class="library-item-legal">
+              Premium network add-ons available for an additional cost
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="adBlurb"></section>
+    <!-- <section id="adBlurb"></section> -->
+    <!-- above section will get done if I have time before due date -->
 
     <footer></footer>
   </body>

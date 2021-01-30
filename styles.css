@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ a {
   padding-bottom: 3.5rem;
   background: url(assets/homepage-masthead-test-desktop-320.jpg) no-repeat
     center center fixed;
-  width: 100vw;
+  /* width: 100vw; */
   background-position: center top;
   background-size: cover;
   overflow: hidden;
@@ -33,18 +33,18 @@ a {
     #0d3640 49.72%,
     #08141f 100%
   );
-  /* padding: 1rem; */
   z-index: 1;
-  width: 100vw;
+  /* width: 100vw; */
   display: grid;
-  columns: gap 1rem;
-  /* row-gap: inherit; */
-  /* align-items: center; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
   text-align: center;
 }
 
-#selectPlan {
-  /* border: 1px solid red; */
+#library {
+  background-color: black;
+  /* width: 100vw; */
 }
 
 #adBlurb {
@@ -95,6 +95,13 @@ a {
   font-size: 1rem;
   letter-spacing: 0.5px;
   font-weight: 600;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.btn-free-trial:hover {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .masthead-legal {
@@ -109,7 +116,7 @@ a {
 }
 
 .green {
-  color: rgb(37, 189, 157);
+  color: rgb(45, 189, 157);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -135,16 +142,174 @@ a {
   color: #b9b9b9;
 }
 
+.ribbon-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  padding: 2rem 0 0 2rem;
+}
+
 .ribbon-brand-img {
   max-width: 355px;
 }
 
 .ribbon-info {
+  padding-top: 2rem;
   text-align: left;
+}
+
+.ribbon-eyebrow {
+  /* margin: 1.5rem auto auto auto; */
+}
+
+.ribbon-details-container {
+  margin: 1rem auto;
+}
+
+.ribbon-get-deal {
+  font-size: 1.7rem;
+}
+
+.ribbon-more-details {
+  padding: 1rem 0;
+}
+
+.view-ribbon-more-details {
+  display: inline-block;
+  /* margin: 1.2rem auto 2rem auto; */
+  text-decoration: underline;
+  opacity: 0.6;
+  line-height: 0.7rem;
+  cursor: pointer;
+}
+
+.ribbon-btn-container {
+  padding-top: 2rem;
+}
+
+.btn-get-bundle {
+  display: inherit;
+  margin: 1.5rem auto 0.5rem auto;
+  padding: 1.3rem 2.5rem;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-terms {
+  text-decoration: underline;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}
+
+.library-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 786px;
+  margin: 0 auto;
+}
+
+.library-content {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+.library-title {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.5;
+  margin-bottom: 1rem;
+}
+
+.library-description {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.library-grid-container {
+  background-color: black;
+  margin: 0 auto;
+  padding: 0 1.3rem 3rem;
+  position: relative;
+  max-width: 768px;
+  z-index: 2;
+}
+
+.library-grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.library-grid-item {
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+.library-item-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.library-item-background {
+  width: 100%;
+  object-fit: contain;
+}
+
+.library-item-overlay {
+  padding: 1.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.library-item-eyebrow {
+  margin-bottom: 0.6rem;
+  line-height: 12px;
+}
+
+.library-item-category {
+  font-size: 1.5rem;
+  line-height: 1rem;
+  font-weight: 800;
+}
+
+.library-item-legal {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  padding-top: 0.7rem;
 }
 
 /* @media screen and (min-width: 1021) {
   #masthead {
     background-image: url(assets/homepage-masthead-test-desktop-320.jpg);
+  }
+} */
+
+/* @media (min-width: 1280px) {
+  .library-grid-container {
+    max-width: 100%;
+    padding: 0 0 100px;
   }
 } */
